@@ -18,6 +18,7 @@
       "paths": {
           "@/components/*": ["components/*"],
           "@/global-components/*": ["components/Global/*"],
+          "@/page-components/*": ["components/Page/*"],
           "@/media/*": ["components/Media/*"],
           "@/context/*": ["context/*"],
           "@/element/*": ["components/Element/*"]

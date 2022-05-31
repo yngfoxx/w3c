@@ -39,12 +39,18 @@ const Header = forwardRef((props:any, ref:any) => {
     ))
 
     return (
-        <Box w={'full'} p={{base: '25px 24px', lg: '26px 49px'}} bg={'w3c.purple.t900'} {...props} ref={ref}>
-            <HStack w={'full'} maxW={'1440px'} justifyContent={'space-between'} m={'auto'}>
+        <Box
+            w={'full'}
+            p={{base: '25px 24px', lg: '26px 49px'}}
+            bg={'w3c.purple.t900'}
+            backdropFilter={'blur(18px)'}
+            {...props} ref={ref}
+        >
+            <HStack w={'full'} maxW={'1440px'} justifyContent={'space-between'} m={'auto'} px={{base: '0', lg: '60px'}}>
                 <Image
                     src={logo} alt={'web3 casino'}
-                    width={useBreakpointValue({ base: '151px', lg: '293px' })}
-                    height={useBreakpointValue({base: '29px', lg: '57px'})}
+                    width={useBreakpointValue({ base: '151px', lg: '200px' })}
+                    height={useBreakpointValue({base: '29px', lg: '38px'})}
                 />
                 <MobileMenuButton
                     hidden={useBreakpointValue({ base: false, lg: true})}

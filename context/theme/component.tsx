@@ -57,3 +57,44 @@ export const Skeleton = {
         endColor: '#dedede',
     }
 }
+
+export const Heading = {
+    sizes: {
+        extraLarge: {
+            fontSize: '75px',
+            fontWeight: '600',
+            lineHeight: '94.5px',
+            fontStyle: 'normal',
+            color: 'w3c.gold.700'
+        },
+        large: {
+            fontFamily: 'Inter',
+            fontSize: '48px',
+            fontWeight: '600',
+            lineHeight: '58px',
+            fontStyle: 'normal'
+        },
+        medium: {
+            fontSize: '32px',
+            fontWeight: '600',
+            lineHeight: '40px',
+            fontStyle: 'normal',
+            color: 'w3c.gold.700'
+        },
+        small: {
+            fontSize: '20px',
+            fontWeight: '500',
+            lineHeight: '24px',
+        },
+        extraSmall: {
+            fontSize: '17px',
+            fontWeight: '500',
+            lineHeight: '22px'
+        },
+        extraExtraSmall: {
+            fontSize: '15px',
+            fontWeight: '400',
+            lineHeight: '20px'
+        }
+    }
+}

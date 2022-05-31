@@ -8,7 +8,6 @@ function App({ Component, pageProps }: AppProps) {
     const [globalState, setGlobalState] = useState({
         locale: 'en',
         authorized: true,
-        authenticated: false,
     })
 
     return (

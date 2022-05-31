@@ -1,3 +1,6 @@
+import '@fontsource/outfit'
+import '@fontsource/outfit/500.css'
+
 import '@fontsource/inter'
 import '@fontsource/inter/500.css'
 
@@ -12,7 +15,7 @@ const config: ThemeConfig = {
     useSystemColorMode: false,
 }
 const fonts = {
-    heading: 'Inter',
+    heading: 'Outfit',
     body: 'Inter'
 }
 
