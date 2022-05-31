@@ -28,17 +28,17 @@ const Hero = (props:any) => {
                 }}
                 p={{base: '14px 12px', md: '60px 40px', lg: '60px 72px'}}
             >
-                <VStack alignItems={'left'} maxW={{base: 'none', md: '615px', lg: '750px'}}>
-                    <Heading size={{base: 'medium', lg: 'medium', xl: 'extraLarge'}}>Web3 Casino</Heading>
+                <VStack alignItems={'left'} maxW={{base: 'none', md: '615px', xl: '750px'}}>
+                    <Heading size={{base: 'medium', lg: 'extraLarge', xl: 'extraLarge'}}>Web3 Casino</Heading>
                     <Box>
                         <Text
-                            fontSize={{base: '14px', lg: '18px', xl: '27px'}}
-                            lineHeight={{base: '16.94px', lg: '20px', xl: '32.68px'}}
+                            fontSize={{base: '14px', md: '18px', xl: '27px'}}
+                            lineHeight={{base: '16.94px', md: '20px', xl: '32.68px'}}
                             fontWeight={500}
                         >The Future of Gambling built on the Blockchain incorporating web3 technology and Crypto.</Text>
                         <Text
-                            fontSize={{base: '11px', lg: '19px', xl: '27px'}}
-                            lineHeight={{base: '13px', lg: '24px', xl: '32.68px'}}
+                            fontSize={{base: '11px', md: '19px', xl: '27px'}}
+                            lineHeight={{base: '13px', md: '24px', xl: '32.68px'}}
                             color={'w3c.gray.700'} fontWeight={400}
                             mt={{base: '7px', lg: '11px'}}
                         >
@@ -49,8 +49,8 @@ const Hero = (props:any) => {
                             {" "}wallet and you are good to go.
                         </Text>
                         <Text
-                            fontSize={{base: '14px', lg: '20px', xl: '27px'}}
-                            lineHeight={{base: '16.94px', lg: '25px', xl: '32.68px'}}
+                            fontSize={{base: '14px', md: '20px', xl: '27px'}}
+                            lineHeight={{base: '16.94px', md: '25px', xl: '32.68px'}}
                             fontWeight={600} color={'w3c.gold.700'}
                             mt={{base: '7px', lg: '21px'}}
                         >ETA-LUNCHTIME TO BE ANNOUNCED</Text>
@@ -63,8 +63,8 @@ const Hero = (props:any) => {
                 </VStack>
 
                 <Box
-                    minW={{base: 'unset', lg: '438px'}}
-                    minH={{base: 'unset', lg: '465px'}}
+                    minW={{base: 'unset', md: '277px', lg: '438px'}}
+                    minH={{base: 'unset', md: '277px', lg: '465px'}}
                     maxW={{base: '177px', md: 'unset'}}
                     maxH={{base: '177px', md: 'unset'}}
                     transform={{base: 'translateY(-40px)', md: 'translateY(-10px)', lg: 'none'}}

@@ -99,7 +99,7 @@ export const Heading = {
     }
 }
 
-export const breakpoints = {
+export const Breakpoints = {
     sm: '320px',
     md: '768px',
     lg: '960px',
