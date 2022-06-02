@@ -19,7 +19,7 @@ const Campaign = (props:any) => {
                 >
                     <Image alt={'3 coins'} src={CoinsImage}></Image>
                 </Box>
-                <Heading size={{base: 'medium', lg: 'extraLarge'}}>Join the innovation</Heading>
+                <Heading size={{base: 'medium', lg: 'extraLarge'}} textAlign={'center'}>Join the innovation</Heading>
                 <Stack
                     direction={{base: 'column', lg: 'row'}}
                     spacing={{base: '10px', lg: '20px'}}

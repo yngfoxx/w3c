@@ -17,19 +17,19 @@ const Community = (props:any) => {
                 spacing={{base: '29px', lg: '80px'}}
                 justifyContent={'center'}
             >
-                <Box w={{base: '91px', lg: '170px', xl: 'auto'}}>
+                <Box w={{base: '91px', lg: '170px', xl: 'auto'}} minW={'50px'}>
                     <Image src={ChainImage} alt={'link up'}/>
                 </Box>
                 <VStack spacing={{base: '6px', lg: '15px', xl: '21px'}} alignItems={'flex-start'}>
                     <Heading
-                        size={{base: 'small', lg: 'large', xl: 'extraLarge'}}
+                        size={{base: 'extraExtraSmall', sm:'extraSmall', md:'small', lg: 'large', xl: 'extraLarge'}}
                         fontWeight={'600 !important'} color={'#000 !important'}
                         w={'max-content'}
                     >Join Our Amazing<br/>Community</Heading>
                     <Link href={'#'}
-                        fontSize={{base: '15px', lg: '25px', xl: '39px'}}
-                        fontWeight={600}
-                        fontFamily={'Inter'} lineHeight={{base: '21.78px', lg: '28px', xl: '47.2px'}}
+                        fontSize={{base: '10px', md: '15px', lg: '25px', xl: '39px'}}
+                        fontWeight={600} fontFamily={'Inter'}
+                        lineHeight={{sm: '11px', md: '21.78px', lg: '28px', xl: '47.2px'}}
                         p={{base: '6px 11px', lg: '10px 25px', xl: '15px 39px'}}
                         bg={'w3c.purple.400'} borderRadius={'6px'}
                     >Visit Telegram</Link>
