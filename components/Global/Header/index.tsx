@@ -7,7 +7,7 @@ import {
     Link,
     useBreakpointValue 
 } from "@chakra-ui/react";
-import logo from "./logo.svg"
+import Logo from "@/element/Logo";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -47,8 +47,7 @@ const Header = forwardRef((props:any, ref:any) => {
             {...props} ref={ref}
         >
             <HStack w={'full'} maxW={'1440px'} justifyContent={'space-between'} m={'auto'} px={{base: '0', lg: '60px'}}>
-                <Image
-                    src={logo} alt={'web3 casino'}
+                <Logo
                     width={useBreakpointValue({ base: '151px', lg: '200px' })}
                     height={useBreakpointValue({base: '29px', lg: '38px'})}
                 />

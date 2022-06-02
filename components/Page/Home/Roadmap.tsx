@@ -12,6 +12,32 @@ import { useState } from "react"
 
 const Roadmap = (props:any) => {
 
+    const Background = (props:any) => (
+        <svg width="1209" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <rect width="100%" height="100%" rx="20" fill="url(#paint0_linear_128_21)"/>
+            <rect x="1.5" y="1.5" rx="18.5" stroke="url(#paint1_linear_128_21)" strokeOpacity="0.55" strokeWidth="3"
+                width={useBreakpointValue({base: '99%', sm: '99.3%', md: '99.4%', lg:'99.7%'})}
+                height={useBreakpointValue({base: '99.7%', lg:'99.7%'})}
+            />
+            <defs>
+                <linearGradient id="paint0_linear_128_21" x1="604.5" y1="-365" x2="604.5" y2="100%" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#170F41"/>
+                    <stop stopOpacity="0"/>
+                    <stop offset="0.0001" stopColor="#161130"/>
+                    <stop offset="0.329232" stopColor="#110B30" stopOpacity="0.18"/>
+                    <stop offset="0.9999" stopColor="#161130"/>
+                    <stop offset="1" stopColor="#0F0B25"/>
+                    <stop offset="1" stopColor="#AF2EEB" stopOpacity="0"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_128_21" x1="28.6779" y1="857" x2="1466.24" y2="422.483" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="#B936F5" stopOpacity="0.25"/>
+                    <stop stopColor="#B936F5" stopOpacity="0.2"/>
+                    <stop offset="1" stopColor="#AA14F0" stopOpacity="0.15"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    )
+
     const isMobile = useBreakpointValue({base: true, xl: false})
     const [roadmap, setRoadmap] = useState([
         {
@@ -62,18 +88,13 @@ const Roadmap = (props:any) => {
     
     return (
         <Box w={'full'} {...props}>
-            <VStack as={Box}
-                margin={'auto'} w={'95vw'} maxW={'1440px'}
+            <VStack
+                margin={'auto'} w={{base:'85vw', '2xl': '95vw'}} maxW={'1440px'}
                 pos={'relative'}
-                border={'4px solid transparent'}
                 borderRadius={'20px'}
-                bg={'w3c.purple.linear_gradient.2'}
-                style={{
-                    backgroundOrigin: 'border-box',
-                    backgroundClip: 'padding-box, border-box'
-                }}
                 p={{base: '28px 12px', md: '60px 20px', lg:'69px 50px', xl: '69px 72px'}}
             >
+                <Background width={'100%'} style={{ position:'absolute', top:0, left:0, right:0, bottom:0, zIndex:-1 }} />
                 <Heading
                     size={{base: 'medium', lg: 'extraLarge'}}
                     textAlign={'center'}
@@ -81,7 +102,7 @@ const Roadmap = (props:any) => {
                 >Roadmap to Revolution</Heading>
                 <Stack
                     direction={'row'}
-                    spacing={'15px'}
+                    spacing={{base: '0px', md: '15px'}}
                     mt={{base: '0 !important', md: '40px !important'}}
                     flexWrap={{base: 'wrap', xl: 'nowrap'}}
                     justifyContent={'center'}
@@ -126,7 +147,7 @@ const Roadmap = (props:any) => {
                                         <Box key={key}
                                             pos={'relative'}
                                             border={'2px solid transparent'}
-                                            borderRadius={'7px'} minW={'305px'}
+                                            borderRadius={'7px'} minW={{base: '260px', xl: '255px', '2xl': '305px'}}
                                             textAlign={'center'} py={'12px'}
                                             fontFamily={'Inter'} fontWeight={400}
                                             lineHeight={'25px'} fontSize={'21px'}

@@ -82,9 +82,11 @@ export const Heading = {
             color: 'w3c.gold.700'
         },
         small: {
-            fontSize: '20px',
-            fontWeight: '500',
-            lineHeight: '24px',
+            fontFamily: 'Inter',
+            fontSize: '27px',
+            fontWeight: '400',
+            fontStyle: 'normal',
+            lineHeight: '32.68px'
         },
         extraSmall: {
             fontSize: '17px',

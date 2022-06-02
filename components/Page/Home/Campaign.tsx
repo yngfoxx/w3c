@@ -10,7 +10,7 @@ import { WtcButton } from '@/element/Button';
 
 const Campaign = (props:any) => {
     return (
-        <Box w={'full'} {...props}>
+        <Box margin={'auto'} w={{base:'85vw', '2xl': '95vw'}} {...props}>
             <VStack spacing={0}>
                 <Box
                     maxW={{base: '186px', lg: 'unset'}}
