@@ -61,6 +61,7 @@ export const Skeleton = {
 export const Heading = {
     sizes: {
         extraLarge: {
+            fontFamily: 'Outfit',
             fontSize: '75px',
             fontWeight: '600',
             lineHeight: '94.5px',
@@ -68,13 +69,14 @@ export const Heading = {
             color: 'w3c.gold.700'
         },
         large: {
-            fontFamily: 'Inter',
+            fontFamily: 'Outfit',
             fontSize: '48px',
             fontWeight: '600',
             lineHeight: '58px',
             fontStyle: 'normal'
         },
         medium: {
+            fontFamily: 'Outfit',
             fontSize: '32px',
             fontWeight: '600',
             lineHeight: '40px',
@@ -82,7 +84,7 @@ export const Heading = {
             color: 'w3c.gold.700'
         },
         small: {
-            fontFamily: 'Inter',
+            fontFamily: 'Outfit',
             fontSize: '27px',
             fontWeight: '400',
             fontStyle: 'normal',

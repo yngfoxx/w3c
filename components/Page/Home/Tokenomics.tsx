@@ -87,7 +87,7 @@ const Tokenomics = (props:any) => {
                     <Heading
                         size={{base: 'small', lg: 'large'}} w={'full'}
                         textAlign={'left'} color={'w3c.gold.700'}
-                        fontWeight={'600 !important'}
+                        fontWeight={'600 !important'} fontFamily={'Inter !important'}
                     >Supply ———</Heading>
 
                     <Stack 
