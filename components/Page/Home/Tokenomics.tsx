@@ -1,10 +1,12 @@
+import { WtcButton } from '@/element/Button'
 import {
     Box,
     Heading,
     Text,
     VStack,
     Stack,
-    useBreakpointValue
+    useBreakpointValue,
+    HStack
 } from "@chakra-ui/react"
 import { useState } from "react"
 
@@ -61,11 +63,11 @@ const Tokenomics = (props:any) => {
         },
         {
             title: 'Liquidity',
-            body: 'Knowing how important it is to keep the token alive we need to keep the liquidity strong that is why we feed it with 4% that will go back into the liquidity to keep it strong.'
+            body: 'Knowing how important it is to keep the token alive we need to keep the liquidity strong that is why we feed it with 3% that will go back into the liquidity to keep it strong.'
         },
         {
-            title: 'Marketing',
-            body: '3% Every Transaction gives more fuel to our marketing message. With an experienced Marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to flip. That is why 3% will be used for marketing.'
+            title: 'Marketing & Buy back',
+            body: '3% of every Transaction will be pushed to our experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to flip. And 2% for Manual Buy Back.'
         }
     ])
 
@@ -75,21 +77,21 @@ const Tokenomics = (props:any) => {
                 margin={'auto'} w={{base:'85vw', '2xl': '95vw'}} maxW={'1440px'}
                 pos={'relative'}
                 borderRadius={'20px'}
-                p={{base: '28px 12px', md: '60px 20px', lg:'69px 50px', xl: '69px 72px'}}
+                p={{base: '28px 12px', md: '60px 20px', lg:'69px 50px', xl: '69px 72px 120px'}}
             >
                 <Background width={'100%'} style={{ position:'absolute', top:0, left:0, right:0, bottom:0, zIndex:-1 }} />
                 <Heading size={{base: 'medium', lg: 'extraLarge'}} textAlign={'center'}>Tokenomics</Heading>
                 <Heading size={{base:'extraExtraSmall', md: 'extraSmall', lg: 'small'}} textAlign={'center'}>
                     The coin dynamics that will fuel casino.
                 </Heading>
+                <br />
+                <HStack spacing={10}>
+                    <WtcButton as={Box} isPrimary>12% Buy</WtcButton>
+                    <WtcButton as={Box} isPrimary>12% Sell</WtcButton>
+                </HStack>
 
                 <VStack w={'full'} spacing={{base: '15px', lg: '23px'}} mt={{base: '29px !important', lg: '50px !important'}} px={'10px'}>
-                    <Heading
-                        size={{base: 'small', lg: 'large'}} w={'full'}
-                        textAlign={'left'} color={'w3c.gold.700'}
-                        fontWeight={'600 !important'} fontFamily={'Inter !important'}
-                    >Supply ———</Heading>
-
+        
                     <Stack 
                         w={'full'} spacing={{base: '50px',  xl: '15px'}}
                         justifyContent={'space-between'}
