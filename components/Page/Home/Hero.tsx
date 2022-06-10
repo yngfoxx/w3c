@@ -5,7 +5,8 @@ import {
     VStack,
     Text,
     HStack,
-    useBreakpointValue
+    useBreakpointValue,
+    Link
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import CoinImage from '@/media/image/coin.png'
@@ -79,7 +80,7 @@ const Hero = (props:any) => {
 
                         <HStack spacing={{base: '7px', md: '20px'}} mt={{base: '10px', lg: '41px'}}>
                             <WtcButton isPrimary>Buy Now</WtcButton>
-                            <WtcButton>Telegram</WtcButton>
+                            <WtcButton as={Link} href={'https://t.me/Web3Casino'}>Telegram</WtcButton>
                         </HStack>
                     </Box>
                 </VStack>

@@ -46,45 +46,13 @@ const Socials = (props:any) => {
                             transition: 'opacity .3s linear'
                         }}
                     />
-                    <SocialButton
+                    <SocialButton href={'https://t.me/Web3Casino'}
                         w={'full'} h={'full'} pr={{base: '3px', lg: '10px'}} pt={{base: '3px', md: '0px'}}
                         _groupHover={{boxShadow: 'inset 0px -5px 12px rgba(0, 186, 198, 0.35), inset 0px 2px 4px rgba(255, 255, 255, 0.1)'}}
                     >
                         <TelegramIcon
                             isHovered={ hoverState.telegram } color={'gray'} width={'100%'}
                             height={useBreakpointValue({base:'23px', lg:'45px'})}
-                            style={{margin:'auto', transition:'color-change .3s linear'}}
-                        />
-                    </SocialButton>
-                </Box>
-
-
-                {/* Facebook */}
-                <Box
-                    role={'group'} pos={'relative'}
-                    w={{base: '50px', md: '80px', lg: '138px'}}
-                    h={{base: '50px', md: '80px', lg: '138px'}}
-                    onMouseEnter={() => setHoverState({...hoverState, facebook: true})}
-                    onMouseLeave={() => setHoverState({...hoverState, facebook: false})}
-                >
-                    <FacebookIcon
-                        isHovered={ hoverState.facebook } width={'100%'}
-                        height={useBreakpointValue({base: '31px', lg: '61px'})}
-                        style={{
-                            opacity: `${hoverState.facebook ? 1 : 0}`,
-                            position: 'absolute',
-                            top: '50%', left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            transition: 'opacity .3s linear'
-                        }}
-                    />
-                    <SocialButton
-                        w={'full'} h={'full'}
-                        _groupHover={{boxShadow: 'inset 0px -5px 12px rgba(11, 130, 203, 0.35), inset 0px 2px 4px rgba(255, 255, 255, 0.1)'}}
-                    >
-                        <FacebookIcon
-                            isHovered={ hoverState.facebook } color={'gray'} width={'100%'}
-                            height={useBreakpointValue({base:'30px', lg:'51px'})}
                             style={{margin:'auto', transition:'color-change .3s linear'}}
                         />
                     </SocialButton>
@@ -110,7 +78,7 @@ const Socials = (props:any) => {
                             transition: 'opacity .3s linear'
                         }}
                     />
-                    <SocialButton
+                    <SocialButton href={'https://twitter.com/theweb3casino?s=21&t=Rlvp_hmuplrGzb5UtXq2_A'}
                         w={'full'} h={'full'}
                         _groupHover={{boxShadow: 'inset 0px -5px 12px rgba(29, 161, 242, 0.35), inset 0px 2px 4px rgba(255, 255, 255, 0.1)'}}
                     >
@@ -141,7 +109,7 @@ const Socials = (props:any) => {
                             transition: 'opacity .3s linear'
                         }}
                     />
-                    <SocialButton
+                    <SocialButton href={'https://instagram.com/web3casino.gg?igshid=YmMyMTA2M2Y='}
                         w={'full'} h={'full'}
                         _groupHover={{boxShadow: 'inset 0px -5px 12px rgba(144, 14, 176, 0.35), inset 0px 2px 4px rgba(255, 255, 255, 0.1)'}}
                     >

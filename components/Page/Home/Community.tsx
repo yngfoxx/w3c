@@ -26,7 +26,7 @@ const Community = (props:any) => {
                         fontWeight={'600 !important'} color={'#000 !important'}
                         w={'max-content'}
                     >Join Our Amazing<br/>Community</Heading>
-                    <Link href={'#'}
+                    <Link href={'https://t.me/Web3Casino'}
                         fontSize={{base: '10px', md: '15px', lg: '25px', xl: '39px'}}
                         fontWeight={600} fontFamily={'Inter'}
                         lineHeight={{sm: '11px', md: '21.78px', lg: '28px', xl: '47.2px'}}
